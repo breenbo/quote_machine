@@ -1,0 +1,246 @@
+body {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#corp {
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+    width:100%;
+    min-height:100vh;
+}
+
+/* -HEADER----------------------------------------------------- */
+header {
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+    -ms-flex-pack:end;
+        justify-content:flex-end;
+    -ms-flex-align:stretch;
+        align-items:stretch;
+    color:white;
+    background-color:#F44336;
+    transition-property:background-color;
+    transition-duration:1s;
+}
+
+h1 {
+    font-size:8vmin;
+    text-align:center;
+}
+
+#headerSocial {
+    display:none;
+}
+
+.logoMain {
+    width:20vmin;
+    margin:0 5vw;
+    border-radius:5%;
+    border:solid 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2), 5px 5px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+    width:15vmin;
+    margin:0 5vw;
+    border-radius:5%;
+}
+
+.logoMain:active {
+    box-shadow:none;
+}
+
+/* -MAIN------------------------------------------------------- */
+main {
+    -ms-flex:1;
+        flex:1;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+    -ms-flex-pack:start;
+        justify-content:flex-start;
+    -ms-flex-align:center;
+        align-items:center;
+    min-height:50vh;
+    background-color:#FFECB3;
+}
+
+#talon {
+    display:none;
+}
+
+.fondButton {
+    -ms-flex:2;
+        flex:2;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:row;
+        flex-direction:row;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
+    -ms-flex-align:center;
+        align-items:center;
+    width:100%;
+}
+
+.fondCarte {
+    -ms-flex:4;
+        flex:4;
+    -ms-flex-item-align:stretch;
+        align-self:stretch;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-align:stretch;
+        align-items:stretch;
+}
+
+#card {
+    -ms-flex:1;
+        flex:1;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
+    border-radius:2%;
+    background-color:#FAFAFA;
+}
+
+#quote {
+    text-align:center;
+    font-size:7vmin;
+    margin:5%;
+}
+
+#author {
+    font-size:5vmin;
+    text-align:right;
+    margin-right:3%;
+    border-bottom:solid 1px;
+    border-bottom-color:lightgray;
+}
+
+/* -FOOTER----------------------------------------------------- */
+footer {
+    color:white;
+    background-color:#F44336;
+    text-align:center;
+    transition-property:background-color;
+    transition-duration:1s;
+}
+
+#footSocial {
+    margin-top:3%;
+}
+
+/* ============================================================ */
+
+@media all and (min-width:500px) {
+
+/* -HEADER----------------------------------------------------- */
+    header {
+        -ms-flex-direction:row;
+            flex-direction:row;
+        -ms-flex-pack:end;
+            justify-content:flex-end;
+        -ms-flex-align:center;
+            -ms-grid-row-align:center;
+            align-items:center;
+    }
+
+    #names {
+        -ms-flex:1;
+            flex:1;
+        margin-left:2%;
+    }
+
+    h1 {
+        font-size:6vmin;
+        text-align:left;
+    }
+
+    #headerSocial {
+        display:block;
+        -ms-flex:1;
+            flex:1;
+        margin-right:2%;
+        text-align:right;
+    }
+
+    .logo {
+        width:10vmin;
+        margin:0 2%;
+        border:solid 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .logoMain {
+        width:15vmin;
+        margin:0 10%;
+    }
+
+    #tweet {
+        margin:0 10%;
+    }
+
+    .logo, .logoMain {
+        box-shadow: 6px 6px 3px 0px rgba(0, 0, 0, 0.2), 6px 6px 3px 0 rgba(0, 0, 0, 0.09);
+    }
+
+    .logo:hover, .logoMain:hover {
+        box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.2), 3px 3px 1px 0 rgba(0, 0, 0, 0.09);
+    }
+
+    .logo:active, .logoMain:active {
+        box-shadow:none;
+    }
+
+/* -MAIN------------------------------------------------------- */
+    #talon {
+        -ms-flex:1;
+            flex:1;
+        display:block;
+    }
+
+    .fondCarte {
+        -ms-flex:2;
+            flex:2;
+        -ms-flex-item-align:center;
+            align-self:center;
+    }
+
+    .fondButton {
+        -ms-flex-pack:center;
+            justify-content:center;
+        /* height:75%; */
+    }
+
+    #card {
+        max-width:50vw;
+        min-height:45vh;
+        box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2), 5px 5px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #quote {
+        font-size:5vmin;
+        margin:5%;
+    }
+
+    #author {
+        font-size:4vmin;
+        text-align:right;
+        margin-right:5%;
+    }
+/* -FOOTER----------------------------------------------------- */
+    #footSocial {
+        display : none;
+    }
+}
